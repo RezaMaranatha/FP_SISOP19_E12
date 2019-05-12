@@ -1,2 +1,2 @@
 # Final Project SISOP E12
-#1
+Dari soal Final Project ini, kita diminta untuk membuat sebuah program C yang bertujuan untuk membaca data crontab dan mengaplikasikan nya selayaknya crontab yang terdapat pada LINUX. Program C yang telah kita buat nantinya akan membaca config dari `crontab.data` yang telah berisi config untuk crontab, kemudian program C yang telah dibuat dapat melakukan task secara otomatis. Berikut penjelasan secara detail mengenai code program C kami.
