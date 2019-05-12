@@ -24,9 +24,7 @@ void *check_config(void *arg)
   while(1)
   {
     time_t systim = time(NULL);
-    
     if(flag==0) pthread_exit(NULL);
-    
     int res = systim - crontim; 
     int abs = check_min(myconf);
     if(abs==1 && (res>=60 || tanda==0) ) 
@@ -34,8 +32,6 @@ void *check_config(void *arg)
       pid_t child = fork();
       tanda = 1;
       crontim = systim;
-      //system(myconf->perintah);
-      //pthread_exit(NULL);
       if(child == 0) execl("/bin/sh", "sh", "-c", myconf->perintah, NULL);
     }
   }
